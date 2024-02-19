@@ -1,0 +1,30 @@
+Assembly file, hello.s:
+
+as hello.s -o hello.o
+gcc -o hello hello.o -nostdlib -static
+
+C Files, ex.c:
+
+gcc -g -o ex ex.c
+
+./ex to run
+
+GDB:
+
+gdb ex (loads ex into gdb)
+
+b main (breakpoint on int main())
+
+r (run)
+
+set disassembly-flavor intel
+
+disas (views disassembly)
+
+Other commands:
+
+info reg (gives the status of all registers)
+
+nexti (moves on to next instruction)
+
+stepi (step INTO function)
